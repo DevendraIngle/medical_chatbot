@@ -1,0 +1,135 @@
+/* General Layout */
+.container { 
+    max-width: 900px; 
+    margin: 20px auto; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+img { max-width: 100%; }
+
+/* Chat Container */
+.inbox_msg {
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(135deg, #f5f7fa 0%, #e4e9f0 100%);
+    overflow: hidden;
+}
+.messaging { padding: 20px; }
+.top_spac { margin: 15px 0 0; color: #666; }
+
+/* Heading */
+h3.text-center {
+    color: #2c3e50;
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Messages Area */
+.mesgs {
+    padding: 25px;
+    width: 100%;
+}
+.msg_history {
+    height: 500px;
+    overflow-y: auto;
+    padding: 10px;
+    background: #fff;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+/* Incoming Message (Doctor/Medbot) */
+.incoming_msg_img {
+    display: inline-block;
+    width: 70px;
+    height: 70px;
+    margin-right: 10px;
+}
+.incoming_msg_img img {
+    border-radius: 50%;
+    border: 2px solid #3498db;
+}
+.received_msg {
+    display: inline-block;
+    vertical-align: top;
+    width: calc(100% - 50px);
+}
+
+    .received_withd_msg p {
+        background: #3498db;
+        color: #fff;
+        border-radius: 15px 15px 15px 0;
+        font-size: 20px;
+        margin: 50px;
+        padding: 10px 15px;
+        max-width: 90%;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+.time_date {
+    color: #999;
+    font-size: 11px;
+    margin: 5px 0 15px;
+    display: block;
+}
+
+/* Outgoing Message (User) */
+.outgoing_msg {
+    overflow: hidden;
+    margin: 15px 0;
+    text-align: right;
+}
+.sent_msg p {
+    background: #ecf0f1;
+    color: #2c3e50;
+    border-radius: 15px 15px 0 15px;
+    font-size: 20px;
+    margin: 0;
+    padding: 10px 15px;
+    max-width: 70%;
+    display: inline-block;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.sent_msg .time_date {
+    text-align: right;
+}
+
+/* Input Area */
+.type_msg {
+    border-top: 1px solid #ddd;
+    position: relative;
+    background: #fff;
+    border-radius: 0 0 15px 15px;
+    padding: 10px;
+}
+.input_msg_write input {
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    color: #333;
+    font-size: 14px;
+    min-height: 45px;
+    width: calc(100% - 50px);
+    padding: 0 15px;
+    outline: none;
+}
+.msg_send_btn {
+    background: #2ecc71;
+    border: none;
+    border-radius: 50%;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    right: 15px;
+    top: 13px;
+    transition: background 0.3s;
+}
+.msg_send_btn:hover {
+    background: #27ae60;
+}
