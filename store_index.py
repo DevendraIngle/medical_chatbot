@@ -15,7 +15,7 @@ text_chunks=text_split(extracted_data)
 embeddings = download_hugging_face_embeddings()
 
 index_name = "medbot"
-pc = Pinecone(api_key="pcsk_4Bfm7F_UHJWXVhzupyfKq3hKHK11RWPCahLUxxsbXak1Xky91j9jgieSGFqnLdFP8UdrVu")
+pc = Pinecone(api_key="Enter your api key")
 pc.create_index(
     name=index_name,
     dimension=384, # Replace with your model dimensions
